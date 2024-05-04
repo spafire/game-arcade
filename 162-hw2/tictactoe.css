@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+header{
+    padding: 10px;
+    margin: 10px;
+}
+
+h2 {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px auto;
+}
+
+#gameContainer{
+    width: 96vmin;
+    height: 64vmin;
+    display: flex;
+    overflow: hidden;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 5px;
+    border: 0.5px groove #212837;
+    box-shadow: 0 20px 40px rgba(52, 87, 220, 0.2);
+}
+
+
+
+#difficultySelection {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Creates a 3x3 grid */
+    gap: 10px; /* Space between cells */
+    margin: 20px auto; /* Centering the grid */
+    max-width: 300px; /* Restricting the maximum width of the grid */
+    justify-content: center;
+}
+
+.cell {
+    background-color: #fff;
+    border: 2px solid #333;
+    font-size: 48px;
+    font-weight: bold;
+    cursor: pointer;
+    aspect-ratio: 1 / 1; /* Ensures that cells are square */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px; /* Set a fixed height for better visual */
+    color: #444; /* Default text color */
+}
+
+.cell.red { color: red; }
+.cell.blue { color: blue; }
+
+.cell:hover {
+    background-color: #eaeaea; /* Hover effect for cells */
+}
+
+#resultDisplay {
+    font-size: 24px;
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#buttonContainer {
+    text-align: center;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    bottom: -50px;
+}

@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+header{
+    padding: 10px;
+    margin: 10px;
+}
+
+main {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px auto;
+}
+
+h2 {
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+}
+
+
+#gameContainer{
+    position: relative;
+    width: 96vmin;
+    height: 64vmin;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    border: 0.5px groove #212837;
+    box-shadow: 0 20px 40px rgba(52, 87, 220, 0.2);
+}
+
+#hangmanContainer {
+    width: 48vmin;
+    height: 32vmin;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.right-leg {
+    width: 250px;
+    position: absolute;
+    top: 20px;
+    z-index: 6;
+}
+
+.left-leg {
+    width: 250px;
+    position: absolute;
+    top: 20px;
+    z-index: 5;
+}
+
+.right-arm {
+    width: 250px;
+    position: absolute;
+    top: 20px;
+    z-index: 4;
+}
+
+.left-arm {
+    width: 250px;
+    position: absolute;
+    top: 20px;
+    z-index: 3;
+}
+
+.head {
+    width: 250px;
+    position: absolute;
+    top: 20px;
+    z-index: 2;
+}
+
+.hang {
+    width: 250px;
+    position: absolute;
+    top: 20px;
+    z-index: 1;
+}
+
+
+#emptyLetterContainer {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+}
+
+#emptyLetterContainer > .letter-container {
+    margin-bottom: 10px;;
+    width: 45px;
+    height: 48px;
+    text-align: center;
+    border-bottom: 3px solid rgba(0, 0, 0, 0.5);
+}
+
+#keyboardContainer {
+    display: flex;
+    gap: 20px;
+    width: 700px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 25px;
+    margin-bottom: 20px;
+}
+
+#keyboardContainer > .letter {
+    cursor: pointer;
+}
+
+.letter-container > .letter {
+    margin-bottom: 6px;
+}
+
+.letter {
+    background-color: white;
+    color: black;
+    width: 32px;
+    padding: 4px;
+    display: inline-block;
+    border-radius: 5px;
+    font-size: 22px;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px,
+        rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+.letter:hover {
+    box-shadow: rgba(0, 0, 0, 0.20) 0px 2px 8px;
+}
+
+.selected {
+    background-color: rgb(144, 144, 144);
+    cursor: not-allowed;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+}
+
+.hidden {
+    display: none;
+}
+
+
+#blackout {
+    width: 100vw;
+    height: 100vh;
+    background-color: #0000003d;
+    z-index: 99;
+    position: fixed;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: -500px;
+}

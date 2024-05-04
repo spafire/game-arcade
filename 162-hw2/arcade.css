@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap');
+  
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+#gamesContainer {
+    position: relative;
+    width: 175vmin;
+    height: 50vmin;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    border: 0.5px groove #212837;
+    box-shadow: 0 20px 40px rgba(52, 87, 220, 0.2);
+    margin: auto;
+    margin-top: 100px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+header{
+    padding: 10px;
+    margin: 10px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.game-image {
+    border-radius: 5px;
+    border: 0.5px groove #212837;
+    box-shadow: 0 20px 40px rgba(52, 87, 220, 0.2);
+}
+
+.game-image:hover{
+    transform: scale(1.06);
+    transition: .9s;
+    border-radius: 2.5px;
+    border-color: red;
+}
+
+p {
+    display: flex;
+    justify-content: center;
+    padding-top: 15px;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    bottom: -150px;
+}

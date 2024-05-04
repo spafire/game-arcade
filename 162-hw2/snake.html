@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake Game - Game Arcade</title>
+    <link rel="stylesheet" href="snake.css">
+</head>
+<body>
+    <header>
+        <h1><a href="arcade.html">loony games</a></h1>
+    </header>
+    <h2>Snake Game</h2>
+    <main>
+        <div id="gameContainer">
+            <div class="game-details">
+                <span class="score">Score: 0</span>
+                <span class="high-score">High Score: 0</span>
+            </div>
+
+            <div class="gameOverText"></div>
+    
+            <div class="play-board"></div>
+    
+            <div class="controls">
+                <i data-key="ArrowLeft" class="fa-solid fa-arrow-left-long"></i>
+                <i data-key="ArrowUp" class="fa-solid fa-arrow-up-long"></i>
+                <i data-key="ArrowRight" class="fa-solid fa-arrow-right-long"></i>
+                <i data-key="ArrowDown" class="fa-solid fa-arrow-down-long"></i>
+            </div>
+
+            <div id="buttonContainer">
+                <button id="resetButton" onclick="window.location.reload()"">Play again</button>
+            </div>
+    
+        </div>
+    </main>
+
+    <footer>
+        <p>Copyright &copy; 2024 Loony Games</p>
+    </footer>
+
+    <script src="snake.js"></script>
+</body>
+    
+</body>
+</html>
